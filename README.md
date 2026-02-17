@@ -70,4 +70,13 @@ Yes, you can!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+73: Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## Deploy to Vercel
+
+The easiest way to deploy your React app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+1.  Push your code to a git repository (GitHub, GitLab, BitBucket).
+2.  Import your project into Vercel.
+3.  Vercel will detect that you are using Vite and will set the correct settings for you automatically.
+4.  Your application will be deployed!
