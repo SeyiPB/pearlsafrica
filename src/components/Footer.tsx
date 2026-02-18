@@ -23,7 +23,7 @@ const Footer = () => {
     {
       title: "Ecosystem",
       links: [
-        { name: "GamrTag", href: "#gamrtag" },
+        { name: "GamrTag", href: "/claim-gamrtag" },
         { name: "Studios", href: "#gamr-studios" },
         { name: "Carven", href: "#carven" },
         { name: "Bracket", href: "#bracket" },
