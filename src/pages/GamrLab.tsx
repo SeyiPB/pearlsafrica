@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Calendar, Users, Code, Monitor, Trophy } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RobloxFAQ from "@/components/RobloxFAQ";
 
 const GamrLab = () => {
     return (
@@ -147,15 +148,15 @@ const GamrLab = () => {
                             <h3 className="text-2xl font-bold uppercase tracking-tighter mb-8 text-center">Program Structure</h3>
                             <div className="space-y-12 relative before:absolute before:left-[15px] before:top-2 before:bottom-2 before:w-[1px] before:bg-white/10">
                                 {[
-                                    { phase: "Phase 1", time: "Weeks 0–2", title: "Launch & Selection", desc: "Open call, applications, shortlisting 10–20 serious builders." },
-                                    { phase: "Phase 2", time: "Weeks 2–6", title: "Build Sprint", desc: "30 days of structured sessions: Studio, scripting, world-building, monetization. Each participant ships at least one prototype; cohort ships at least one live experience." },
-                                    { phase: "Phase 3", time: "Weeks 6–12", title: "Monetize & Showcase", desc: "We support you to monetize your worlds, track performance, and develop brand-ready demos." }
+                                    { phase: "Phase 1", title: "Launch & Selection", desc: "Open call, applications, shortlisting 10–20 serious builders." },
+                                    { phase: "Phase 2", title: "Build Sprint", desc: "30 days of structured sessions: Studio, scripting, world-building, monetization. Each participant ships at least one prototype; cohort ships at least one live experience." },
+                                    { phase: "Phase 3", title: "Monetize & Showcase", desc: "We support you to monetize your worlds, track performance, and develop brand-ready demos." }
                                 ].map((item, idx) => (
                                     <div key={idx} className="relative pl-12 group">
                                         <div className="absolute left-0 top-1 w-8 h-8 rounded-full bg-black border border-white/20 text-white flex items-center justify-center text-xs font-bold group-hover:border-blue-500 group-hover:text-blue-500 transition-colors z-10">
                                             {idx + 1}
                                         </div>
-                                        <span className="text-blue-500 text-xs font-bold uppercase tracking-widest block mb-1">{item.phase} • {item.time}</span>
+                                        <span className="text-blue-500 text-xs font-bold uppercase tracking-widest block mb-1">{item.phase}</span>
                                         <h4 className="text-xl font-bold uppercase tracking-tight mb-2">{item.title}</h4>
                                         <p className="text-gray-400 text-sm">{item.desc}</p>
                                     </div>
@@ -204,15 +205,21 @@ const GamrLab = () => {
                         </div>
                     </div>
 
-                    <div className="mt-16 text-center">
-                        <h3 className="text-3xl font-bold uppercase tracking-tighter mb-8">Ready to Build?</h3>
-                        <Button
-                            className="bg-blue-600 text-white hover:bg-blue-700 rounded-none px-12 py-8 text-lg font-bold uppercase tracking-widest shadow-lg shadow-blue-900/20"
-                            asChild
-                        >
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSduntNY9YYicB-JMUDafQre7whF8mW2gtV1Sr9f0-9enmTokQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Apply Now</a>
-                        </Button>
-                    </div>
+                </div>
+            </section>
+
+            <RobloxFAQ />
+
+            {/* Ready to Build CTA */}
+            <section className="py-20 bg-zinc-950/50 border-t border-white/5">
+                <div className="container mx-auto px-6 text-center">
+                    <h3 className="text-3xl font-bold uppercase tracking-tighter mb-8">Ready to Build?</h3>
+                    <Button
+                        className="bg-blue-600 text-white hover:bg-blue-700 rounded-none px-12 py-8 text-lg font-bold uppercase tracking-widest shadow-lg shadow-blue-900/20"
+                        asChild
+                    >
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSduntNY9YYicB-JMUDafQre7whF8mW2gtV1Sr9f0-9enmTokQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Apply Now</a>
+                    </Button>
                 </div>
             </section>
 
