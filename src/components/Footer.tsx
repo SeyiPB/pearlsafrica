@@ -1,5 +1,6 @@
 import { Instagram, Youtube, Linkedin } from "lucide-react";
 import { RiTwitterXFill, RiTiktokFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const socialLinks = [
@@ -103,7 +104,12 @@ const Footer = () => {
         </div>
 
         <div className="mt-20 flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-white/10">
-          <p className="text-xs text-gray-600 uppercase tracking-widest">© 2026 GAMR. All rights reserved.</p>
+          <div className="flex items-center gap-6">
+            <p className="text-xs text-gray-600 uppercase tracking-widest">© 2026 GAMR. All rights reserved.</p>
+            <Link to="/privacy" className="text-xs text-gray-600 hover:text-white uppercase tracking-widest transition-colors">
+              Privacy Policy
+            </Link>
+          </div>
 
           <div className="flex space-x-6">
             {socialLinks.map((social, index) => (
