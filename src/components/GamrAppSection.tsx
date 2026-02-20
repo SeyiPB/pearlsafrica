@@ -36,9 +36,7 @@ const GamrAppSection = () => {
                 asChild
               >
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScXp9hUTJT_e4VWM3SHhnPhWX2a5wyRXlAJf0KhKlCNUUcYLg/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/claim-gamrtag"
                   className="flex items-center"
                 >
                   Join Waitlist <ArrowRight className="ml-2 h-4 w-4" />

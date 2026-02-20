@@ -30,7 +30,7 @@ const GamrLab = () => {
                             className="bg-white text-black hover:bg-gray-200 rounded-none px-8 py-6 text-sm font-bold uppercase tracking-widest min-w-[200px]"
                             asChild
                         >
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSduntNY9YYicB-JMUDafQre7whF8mW2gtV1Sr9f0-9enmTokQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Apply Now</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjUfZrHo1wfPIhrsFU5vDaNiN6MQkhKZmtEyH7xNSJVvWcbQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Apply Now</a>
                         </Button>
                         <Button
                             variant="outline"
@@ -141,7 +141,7 @@ const GamrLab = () => {
                                     className="bg-white text-black hover:bg-gray-200 rounded-none px-8 py-6 text-sm font-bold uppercase tracking-widest w-full sm:w-auto"
                                     asChild
                                 >
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSduntNY9YYicB-JMUDafQre7whF8mW2gtV1Sr9f0-9enmTokQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Apply Now</a>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjUfZrHo1wfPIhrsFU5vDaNiN6MQkhKZmtEyH7xNSJVvWcbQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Apply Now</a>
                                 </Button>
                                 <p className="text-gray-500 text-sm mt-4 uppercase tracking-widest">Spots are limited.</p>
                             </div>
@@ -221,7 +221,7 @@ const GamrLab = () => {
                         className="bg-blue-600 text-white hover:bg-blue-700 rounded-none px-12 py-8 text-lg font-bold uppercase tracking-widest shadow-lg shadow-blue-900/20"
                         asChild
                     >
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSduntNY9YYicB-JMUDafQre7whF8mW2gtV1Sr9f0-9enmTokQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Apply Now</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjUfZrHo1wfPIhrsFU5vDaNiN6MQkhKZmtEyH7xNSJVvWcbQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Apply Now</a>
                     </Button>
                 </div>
             </section>
