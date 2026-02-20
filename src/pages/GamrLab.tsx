@@ -3,6 +3,7 @@ import { ArrowRight, Check, Calendar, Users, Code, Monitor, Trophy } from "lucid
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RobloxFAQ from "@/components/RobloxFAQ";
+import GamrLabCarousel from "@/components/GamrLabCarousel";
 
 const GamrLab = () => {
     return (
@@ -104,6 +105,8 @@ const GamrLab = () => {
                     </div>
                 </div>
             </section>
+
+            <GamrLabCarousel />
 
             {/* What You Get */}
             <section className="py-20 bg-black">
