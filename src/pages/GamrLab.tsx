@@ -202,9 +202,9 @@ const GamrLab = () => {
                                     "Be open to feedback, collaboration, and community guidelines.",
                                     "Demonstrate interest in building engaging, monetizable experiences."
                                 ].map((item, idx) => (
-                                    <li key={idx} className="flex gap-3 text-balance">
+                                    <li key={idx} className="flex gap-3">
                                         <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 shrink-0" />
-                                        <span className="text-gray-300 text-sm md:text-base leading-relaxed">{item}</span>
+                                        <span className="text-gray-300">{item}</span>
                                     </li>
                                 ))}
                             </ul>
