@@ -10,11 +10,11 @@ import {
 } from "@/components/ui/carousel"
 import { cn } from "@/lib/utils"
 
-import img1 from "@/assets/gamrlab/DSC08676.jpg"
-import img2 from "@/assets/gamrlab/DSC08687.jpg"
-import img3 from "@/assets/gamrlab/DSC08695.jpg"
-import img4 from "@/assets/gamrlab/DSC08786.jpg"
-import img5 from "@/assets/gamrlab/DSC09101.jpg"
+import img1 from "@/assets/gamrlab/gamr-lab-1.jpg";
+import img2 from "@/assets/gamrlab/gamr-lab-2.jpg";
+import img3 from "@/assets/gamrlab/gamr-lab-3.jpg"; 
+import img4 from "@/assets/gamrlab/gamr-lab-4.jpg";
+import img5 from "@/assets/gamrlab/gamr-lab-5.jpg";
 
 const slides = [
     { src: img1, alt: "Gamr Lab Workstations and Environment" },
