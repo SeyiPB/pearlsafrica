@@ -195,13 +195,16 @@ const GamrLab = () => {
                             <h2 className="text-blue-500 font-bold uppercase tracking-widest text-sm mb-6">Basic Eligibility</h2>
                             <ul className="space-y-4">
                                 {[
-                                    "Meet the age requirement (details in application)",
-                                    "Able to attend sessions at Gamr Lab, Lagos",
-                                    "Some prior experience with programming, 3D, or game creation is a plus (not strictly required)"
+                                    "Be at least 16 years old (parental consent required if under 18).",
+                                    "Have basic to intermediate experience with Roblox Studio and Lua scripting.",
+                                    "Provide a portfolio, published experience, or Roblox profile.",
+                                    "Commit to a structured build sprint and meet milestones.",
+                                    "Be open to feedback, collaboration, and community guidelines.",
+                                    "Demonstrate interest in building engaging, monetizable experiences."
                                 ].map((item, idx) => (
-                                    <li key={idx} className="flex gap-3">
-                                        <span className="w-1.5 h-1.5 bg-white rounded-full mt-2 shrink-0" />
-                                        <span className="text-gray-300">{item}</span>
+                                    <li key={idx} className="flex gap-3 text-balance">
+                                        <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 shrink-0" />
+                                        <span className="text-gray-300 text-sm md:text-base leading-relaxed">{item}</span>
                                     </li>
                                 ))}
                             </ul>
