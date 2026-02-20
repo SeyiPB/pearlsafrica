@@ -15,6 +15,7 @@ import img2 from "@/assets/gamrlab/gamr-lab-2.jpg";
 import img3 from "@/assets/gamrlab/gamr-lab-3.jpg"; 
 import img4 from "@/assets/gamrlab/gamr-lab-4.jpg";
 import img5 from "@/assets/gamrlab/gamr-lab-5.jpg";
+import img6 from "@/assets/gamrlab/gamr-lab-6.jpg";
 
 const slides = [
     { src: img1, alt: "Gamr Lab Workstations and Environment" },
@@ -22,6 +23,7 @@ const slides = [
     { src: img3, alt: "Collaborative Workspace" },
     { src: img4, alt: "High-Performance Gaming Setup" },
     { src: img5, alt: "Gamr Lab Community Event" },
+    { src: img6, alt: "Gaming Lounge and Social Area" },
 ]
 
 export default function GamrLabCarousel() {
