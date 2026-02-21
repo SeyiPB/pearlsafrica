@@ -45,7 +45,7 @@
             left: -200px;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(244, 172, 59, 0.12) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -56,7 +56,7 @@
             right: -100px;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(94, 215, 255, 0.08) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -73,7 +73,7 @@
             font-weight: 700;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: var(--color-gold);
+            color: #ffffff;
             margin-bottom: 1.75rem;
         }
 
@@ -82,8 +82,8 @@
             display: block;
             width: 20px;
             height: 2px;
-            background: var(--color-gold);
-            border-radius: 2px;
+            background: #ffffff;
+            border-radius: 0px;
         }
 
         .demo-heading {
@@ -93,13 +93,13 @@
             line-height: 1.1;
             color: #fff;
             margin-bottom: 1.25rem;
+            text-transform: uppercase;
         }
 
         .demo-heading em {
-            font-family: var(--font-serif);
-            font-style: italic;
-            font-weight: 400;
-            color: var(--color-gold);
+            font-style: normal;
+            font-weight: 800;
+            color: #ffffff;
         }
 
         .demo-subtext {
@@ -126,14 +126,14 @@
         .benefit-icon {
             width: 36px;
             height: 36px;
-            border-radius: 10px;
-            background: rgba(244, 172, 59, 0.12);
-            border: 1px solid rgba(244, 172, 59, 0.2);
+            border-radius: 0px;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            color: var(--color-gold);
+            color: #ffffff;
         }
 
         .benefit-icon svg {
@@ -222,18 +222,18 @@
 
         .demo-step {
             height: 3px;
-            border-radius: 3px;
+            border-radius: 0px;
             background: var(--color-border);
             flex: 1;
             transition: background 0.4s;
         }
 
         .demo-step.active {
-            background: var(--color-gold);
+            background: var(--color-dark);
         }
 
         .demo-step.done {
-            background: var(--color-green);
+            background: #000000;
         }
 
         /* Form sections */
@@ -276,42 +276,45 @@
         }
 
         .qualify-card {
-            padding: 1.1rem 1.25rem;
-            border: 1.5px solid var(--color-border);
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 0px;
+            padding: 1.25rem;
             display: flex;
-            align-items: center;
-            gap: 0.75rem;
+            align-items: flex-start;
+            gap: 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: transparent;
         }
 
         .qualify-card:hover {
-            border-color: var(--color-gold);
-            background: rgba(244, 172, 59, 0.04);
+            border-color: var(--color-border-dark);
+            transform: translateY(-2px);
+            background: #fafafa;
         }
 
         .qualify-card.selected {
-            border-color: var(--color-gold);
-            background: rgba(244, 172, 59, 0.08);
+            border-color: var(--color-dark);
+            background: rgba(0, 0, 0, 0.02);
+            box-shadow: none;
         }
 
         .qualify-card-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 8px;
+            width: 40px;
+            height: 40px;
+            border-radius: 0px;
+            background: var(--color-bg);
             display: flex;
             align-items: center;
             justify-content: center;
+            color: var(--color-text-muted);
             flex-shrink: 0;
-            background: rgba(244, 172, 59, 0.12);
-            color: #b87a08;
+            transition: color 0.2s, background 0.2s;
         }
 
-        .qualify-card-icon svg {
-            width: 16px;
-            height: 16px;
+        .qualify-card.selected .qualify-card-icon {
+            background: var(--color-dark);
+            color: #ffffff;
         }
 
         .qualify-card-text strong {
@@ -354,22 +357,24 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.85rem 2rem;
-            background: var(--color-dark);
-            color: #fff;
-            border: none;
-            border-radius: var(--border-radius-btn);
+            background: transparent;
+            color: var(--color-dark);
+            border: 2px solid var(--color-dark);
+            border-radius: 0px;
             font-family: var(--font-sans);
             font-size: 0.9rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
             letter-spacing: 0.01em;
+            text-transform: uppercase;
         }
 
         .btn-next:hover {
-            background: #2a2018;
-            transform: translateY(-1px);
-            box-shadow: 0 8px 24px rgba(13, 9, 1, 0.18);
+            background: var(--color-dark);
+            color: #fff;
+            transform: none;
+            box-shadow: none;
         }
 
         .btn-next svg {
@@ -387,21 +392,23 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.95rem 2.5rem;
-            background: var(--color-gold);
+            background: transparent;
             color: var(--color-dark);
-            border: none;
-            border-radius: var(--border-radius-btn);
+            border: 2px solid var(--color-dark);
+            border-radius: 0px;
             font-family: var(--font-sans);
             font-size: 0.95rem;
             font-weight: 800;
             cursor: pointer;
             transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+            text-transform: uppercase;
         }
 
         .btn-submit:hover {
-            background: #e09e2a;
-            transform: translateY(-1px);
-            box-shadow: 0 8px 28px rgba(244, 172, 59, 0.35);
+            background: var(--color-dark);
+            color: #ffffff;
+            transform: none;
+            box-shadow: none;
         }
 
         /* Success state */
@@ -419,13 +426,14 @@
         .success-icon {
             width: 72px;
             height: 72px;
-            border-radius: 50%;
-            background: rgba(67, 181, 90, 0.12);
+            border-radius: 0px;
+            background: transparent;
+            border: 1px solid var(--color-dark);
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 1.75rem;
-            color: var(--color-green);
+            color: var(--color-dark);
         }
 
         .success-icon svg {
@@ -497,7 +505,7 @@
                     <li><a href="contact.html" class="nav-link">Contact Us</a></li>
                 </ul>
             </nav>
-            <a href="book-demo.html" class="btn btn-gold nav-cta btn-sm">Work with Us</a>
+            <a href="book-demo.html" class="btn nav-cta">Work with Us</a>
         </div>
     </header>
 
