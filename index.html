@@ -68,35 +68,54 @@
         </div>
     </section>
 
-    <!-- Stat Cards -->
-    <div class="stats-band">
+    <!-- Partners Marquee -->
+    <div class="partners-wrap" style="padding: 2rem 0; border-bottom: 1px solid var(--color-border);">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <span class="stat-label">Pan-African</span>
-                    <div class="stat-number">40+</div>
-                    <p class="stat-text">Operating in more than 40 communities to support underserved girls and women
-                        across Africa.</p>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-label">Community Reach</span>
-                    <div class="stat-number">38m</div>
-                    <p class="stat-text">Over 38 million lives touched through our programs and community outreach last
-                        year.</p>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-label">Donor Satisfaction</span>
-                    <div class="stat-number">97%</div>
-                    <p class="stat-text">97% of donors report trust and confidence in how their contributions are used.
-                    </p>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-label">Local Empowerment</span>
-                    <div class="stat-number">84%</div>
-                    <p class="stat-text">84% of our team members are from the communities they serve — culturally
-                        informed.</p>
-                </div>
+            <p class="partners-label" style="text-align: center; margin-bottom: 1.5rem;">Our Partners &amp; Supporters
+            </p>
+            <div class="partners-row"
+                style="animation: scroll 20s linear infinite; display: flex; gap: 4rem; justify-content: flex-start; min-width: 200%;">
+                <img src="assets/partners/1.png" alt="Partner 1">
+                <img src="assets/partners/2.png" alt="Partner 2">
+                <img src="assets/partners/3.png" alt="Partner 3">
+                <img src="assets/partners/4.png" alt="Partner 4">
+                <img src="assets/partners/5.png" alt="Partner 5">
+                <img src="assets/partners/6.png" alt="Partner 6">
+                <!-- Duplicate logos for seamless scrolling -->
+                <img src="assets/partners/1.png" alt="Partner 1">
+                <img src="assets/partners/2.png" alt="Partner 2">
+                <img src="assets/partners/3.png" alt="Partner 3">
+                <img src="assets/partners/4.png" alt="Partner 4">
+                <img src="assets/partners/5.png" alt="Partner 5">
+                <img src="assets/partners/6.png" alt="Partner 6">
             </div>
+            <style>
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+
+                .partners-wrap {
+                    overflow: hidden;
+                    background: var(--color-bg);
+                }
+
+                .partners-row img {
+                    height: 30px;
+                    opacity: 0.5;
+                    filter: grayscale(100%) brightness(1.5);
+                    transition: opacity 0.3s;
+                }
+
+                .partners-row img:hover {
+                    opacity: 1;
+                }
+            </style>
         </div>
     </div>
 
@@ -245,32 +264,18 @@
         </div>
     </section>
 
-    <!-- Partners -->
-    <div class="partners-wrap">
-        <div class="container">
-            <p class="partners-label">Our Partners &amp; Supporters</p>
-            <div class="partners-row">
-                <img src="assets/partners/1.png" alt="Partner 1">
-                <img src="assets/partners/2.png" alt="Partner 2">
-                <img src="assets/partners/3.png" alt="Partner 3">
-                <img src="assets/partners/4.png" alt="Partner 4">
-                <img src="assets/partners/5.png" alt="Partner 5">
-                <img src="assets/partners/6.png" alt="Partner 6">
-            </div>
-        </div>
-    </div>
+
 
     <!-- CTA Banner -->
     <div class="cta-banner">
         <div class="container">
             <div class="cta-banner-inner">
                 <span class="section-tag">Make A Difference</span>
-                <h2 class="section-title">Every donation <em>transforms a life</em></h2>
+                <h2 class="section-title">A transformed life <em>starts with you</em></h2>
                 <p class="section-body">Empowering a girl empowers her family and community. Your contribution helps
                     girls achieve economic independence before age 18.</p>
                 <div style="margin-top:2.5rem; display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
-                    <a href="donate.html" class="btn">Donate Now</a>
-                    <a href="programs.html" class="btn btn-outline-white">Learn More</a>
+                    <a href="book-demo.html" class="btn">Partner with Us</a>
                 </div>
             </div>
         </div>
