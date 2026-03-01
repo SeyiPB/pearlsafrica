@@ -109,7 +109,7 @@ Featured Stories
 
 * **Address:** 55 Moleye Street, off Herbert Macauley, Sabo, Yaba, Lagos, Nigeria  
 * **Email:** info@pearlsafrica.org  
-* **Phone:** \+234 (0) 8162 771 452
+* **Phone:** \+234 906 745 3882
 
 Organization Category
 

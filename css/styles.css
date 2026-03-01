@@ -1,44 +1,37 @@
 /* ============================================
-   SPACEX-INSPIRED DESIGN SYSTEM
-   Minimalist, bold, industrial aesthetic
+   BENTO 2.0 DESIGN SYSTEM
+   High-agency, minimal, and functional aesthetic
    ============================================ */
 
 /* 1. RESET & VARIABLES */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Cabinet+Grotesk:wght@400;700;900&display=swap');
 
 :root {
-    /* Color Palette */
-    --color-bg: #000000;
-    /* Deep black background */
-    --color-bg-alt: #111111;
-    /* Dark gray for distinct sections */
-    --color-dark: #000000;
-    --color-text-body: #a9a9a9;
-    /* Light gray for readable body text */
-    --color-text-muted: #666666;
-    --color-border: #333333;
-    /* Subtle dark borders */
-    --color-border-dark: #444444;
-
-    /* Removed all vibrant colors to maintain stark aesthetic */
+    /* Color Palette - Anti-Slop Zinc-950 */
+    --color-bg: #09090b;
+    --color-bg-alt: #18181b;
+    --color-card: #ffffff;
+    --color-text-body: #a1a1aa;
+    --color-text-muted: #71717a;
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-border-light: rgba(226, 232, 240, 0.5);
 
     /* Typography */
-    --font-sans: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-heading: 'Cabinet Grotesk', 'Geist', sans-serif;
+    --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
     /* Layout */
     --container-width: 1400px;
     --header-height: 80px;
-    --border-radius-card: 0px;
-    /* Sharp, industrial edges */
-    --border-radius-btn: 0px;
-    --border-radius-sm: 0px;
+    --border-radius-main: 2.5rem;
+    --border-radius-card: 2rem;
+    --border-radius-btn: 3rem;
 
-    /* Shadows are mostly removed for flat aesthetic */
-    --shadow-sm: none;
-    --shadow-md: none;
-    --shadow-lg: none;
+    /* Diffusion Shadows */
+    --shadow-diffusion: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+    --shadow-glass: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 
-    --transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    --transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* RESET */
@@ -63,6 +56,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
     overflow-x: hidden;
+    letter-spacing: -0.01em;
 }
 
 img {
@@ -100,9 +94,9 @@ a {
     text-align: center;
 }
 
-/* Section styling for SpaceX look (full vh blocks) */
+/* Section styling for Bento look - Asymmetric Bias */
 .full-screen-section {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -130,10 +124,12 @@ a {
 }
 
 .section-title {
+    font-family: var(--font-heading);
     font-size: clamp(2.5rem, 5vw, 4.5rem);
     font-weight: 900;
-    letter-spacing: -0.05em;
-    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    text-transform: none;
+    /* Anti-Spacex slop: avoid all-caps for titles */
     line-height: 0.95;
     color: #ffffff;
     margin-bottom: 2rem;
@@ -163,25 +159,27 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 1.25rem 3rem;
+    padding: 1rem 2.5rem;
     border-radius: var(--border-radius-btn);
     font-family: var(--font-sans);
     font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: none;
     text-decoration: none;
-    border: 2px solid #ffffff;
+    border: 1px solid var(--color-border);
     cursor: pointer;
     transition: var(--transition);
     white-space: nowrap;
-    background: transparent;
+    background: var(--color-bg);
     color: #ffffff;
+    box-shadow: var(--shadow-diffusion);
 }
 
 .btn:hover {
     background: #ffffff;
-    color: #000000;
+    color: var(--color-bg);
+    transform: translateY(-1px);
 }
 
 /* Removed btn-gold and btn-green */
@@ -221,14 +219,18 @@ a {
 /* 4. HEADER / NAV */
 .header {
     height: var(--header-height);
-    position: absolute;
-    /* absolute instead of sticky for transparent hero overlay */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    background: transparent;
-    transition: background 0.3s;
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 3rem);
+    max-width: var(--container-width);
+    z-index: 1000;
+    background: rgba(9, 9, 11, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--color-border);
+    border-radius: 5rem;
+    transition: var(--transition);
 }
 
 /* Optional class to add dark background on scroll if desired later */
@@ -247,13 +249,12 @@ a {
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 0.65rem;
+    gap: 0.75rem;
     text-decoration: none;
     color: #ffffff;
-    font-weight: 900;
-    font-size: 1.5rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
     flex-shrink: 0;
 }
 
@@ -267,13 +268,12 @@ a {
 .nav-link {
     text-decoration: none;
     color: #ffffff;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
     transition: color 0.2s, opacity 0.2s;
     position: relative;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .nav-link:hover {
@@ -287,11 +287,12 @@ a {
 .nav-link.active::after {
     content: '';
     position: absolute;
-    bottom: -6px;
+    bottom: -4px;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 1.5px;
     background: #ffffff;
+    border-radius: 1px;
 }
 
 .nav-cta {
@@ -301,12 +302,12 @@ a {
 /* 5. HERO */
 .hero {
     position: relative;
-    height: 100vh;
+    height: 100dvh;
     min-height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    background: #000000;
+    justify-content: center;
+    background: var(--color-bg);
     color: #ffffff;
     overflow: hidden;
 }
@@ -380,8 +381,9 @@ a {
 }
 
 .hero-inner {
-    max-width: 800px;
-    /* Removed custom max-width to allow text to flow based on container */
+    max-width: 900px;
+    text-align: left;
+    /* Anti-Spacex slop: Force left alignment */
 }
 
 .hero-tag {
@@ -538,12 +540,11 @@ a {
 }
 
 .split-image {
-    border-radius: var(--border-radius-card);
-    /* Now 0px */
+    border-radius: var(--border-radius-main);
     border: 1px solid var(--color-border);
     overflow: hidden;
     aspect-ratio: 4/3;
-    /* Removed heavy shadow */
+    box-shadow: var(--shadow-diffusion);
 }
 
 .split-image img {
@@ -565,82 +566,154 @@ a {
 }
 
 /* 8. PROGRAM CARDS */
+/* 8. PROGRAM CARDS - Redesigned for 3-Column Layout */
 .programs-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
+    align-items: stretch;
+}
+
+.program-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
 }
 
 .program-card {
-    background: transparent;
+    background: var(--color-bg-alt);
     border: 1px solid var(--color-border);
-    border-radius: var(--border-radius-card);
-    /* Now 0px */
+    border-radius: 1.5rem;
     overflow: hidden;
-    transition: border-color 0.3s;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     display: flex;
     flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.program-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    pointer-events: none;
 }
 
 .program-card:hover {
-    border-color: #ffffff;
-    /* Removed translate and shadow */
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-8px);
+    box-shadow:
+        0 20px 40px -10px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.program-card-img-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    position: relative;
 }
 
 .program-card-img {
     width: 100%;
-    height: 240px;
+    height: 100%;
     object-fit: cover;
     filter: grayscale(100%);
-    transition: filter 0.5s;
+    opacity: 0.8;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .program-card:hover .program-card-img {
     filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .program-card-body {
-    padding: 2rem;
+    padding: 2.25rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .program-chip {
     display: inline-block;
     align-self: flex-start;
-    font-size: 0.75rem;
+    font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    padding: 0.4rem 0.8rem;
+    letter-spacing: 0.2em;
+    padding: 0.5rem 1rem;
     margin-bottom: 1.5rem;
-    background: transparent;
-    color: #ffffff;
-    border: 1px solid var(--color-border-dark);
-}
-
-/* Overriding colored chips to all be stark white outlines */
-.program-chip.green-chip,
-.program-chip.purple-chip {
-    background: transparent;
-    color: #ffffff;
-    border: 1px solid var(--color-border-dark);
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
 }
 
 .program-card-title {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 800;
     margin-bottom: 1rem;
     color: #ffffff;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    letter-spacing: -0.01em;
 }
 
 .program-card-desc {
     font-size: 0.95rem;
     color: var(--color-text-body);
     line-height: 1.6;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.program-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.program-card:hover .program-card-footer {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.program-card-footer svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s;
+}
+
+.program-card:hover .program-card-footer svg {
+    transform: translateX(4px);
+}
+
+/* Responsiveness for 3-column grid */
+@media (max-width: 1100px) {
+    .programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .programs-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .program-card-body {
+        padding: 1.75rem;
+    }
 }
 
 /* 9. ALL PROGRAMS PAGE */
@@ -793,11 +866,26 @@ a {
     letter-spacing: 0.08em;
 }
 
-/* 10. STORIES */
+/* 10. STORIES - Asymmetric Grid */
 .stories-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2.5rem;
+}
+
+.story-card {
+    background: var(--color-bg-alt);
+    border-radius: var(--border-radius-card);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    transition: var(--transition);
+}
+
+.story-card:nth-child(3) {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .story-card {
@@ -1721,5 +1809,141 @@ textarea.form-control {
 
     .stats-band {
         margin-top: 0;
+    }
+}
+
+/* ============================================
+   LOGOCLOUD / PARTNERS SECTION (Stripe/Linear Style)
+   ============================================ */
+.partners-wrap {
+    padding: 3rem 0;
+    background: var(--color-bg);
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Sub-divider for trust signal */
+.partners-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--color-border), transparent);
+}
+
+.partners-label {
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+    opacity: 0.6;
+    animation: labelPulse 8s infinite alternate ease-in-out;
+}
+
+@keyframes labelPulse {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 0.7;
+    }
+}
+
+.partners-container {
+    position: relative;
+    width: 100%;
+    /* Mask for edge-fading */
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.partners-track {
+    display: flex;
+    gap: 6rem;
+    width: max-content;
+    animation: infiniteScroll 40s linear infinite;
+    padding: 1rem 0;
+}
+
+.partners-track:hover {
+    animation-play-state: paused;
+}
+
+.partners-track img {
+    height: 48px;
+    width: auto;
+    filter: grayscale(1) brightness(0.8) contrast(1.2);
+    opacity: 0.5;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.partners-track img:hover {
+    filter: grayscale(0) brightness(1) contrast(1);
+    opacity: 1;
+    transform: translateY(-2px) scale(1.05);
+}
+
+@keyframes infiniteScroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Light sweep effect */
+.partners-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.03),
+            transparent);
+    animation: lightSweep 12s infinite linear;
+    pointer-events: none;
+}
+
+@keyframes lightSweep {
+    0% {
+        left: -100%;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .partners-wrap {
+        padding: 2rem 0;
+    }
+
+    .partners-track {
+        gap: 3rem;
+        animation-duration: 25s;
+    }
+
+    .partners-track img {
+        height: 36px;
     }
 }
