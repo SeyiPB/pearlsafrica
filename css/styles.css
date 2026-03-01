@@ -421,8 +421,7 @@ a {
     line-height: 1.5;
     max-width: 600px;
     margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
 }
 
 .hero-actions {
