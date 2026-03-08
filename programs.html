@@ -23,7 +23,7 @@
     <header class="header">
         <div class="container header-inner">
             <a href="index.html" class="nav-logo">
-                <img src="assets/logo.png" alt="Pearls Africa" style="height:30px;">
+                <img src="assets/logo.png" alt="Pearls Africa">
                 <span>Pearls Africa</span>
             </a>
             <nav>
@@ -31,11 +31,14 @@
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="programs.html" class="nav-link active">Programs</a></li>
-                    <li><a href="blog.html" class="nav-link">Stories</a></li>
+                    <li><a href="approach.html" class="nav-link">Our Approach</a></li>
+                    <li><a href="impact.html" class="nav-link">Impact</a></li>
+                    <li><a href="partner.html" class="nav-link">Partners</a></li>
+                    <li><a href="blog.html" class="nav-link">Insights</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <a href="partner.html" class="btn btn-sm nav-cta">WORK WITH US</a>
+            <a href="partner.html" class="btn btn-sm nav-cta">GET INVOLVED</a>
         </div>
     </header>
 
@@ -54,95 +57,49 @@
         <div class="container">
             <div class="programs-intro">
                 <span class="section-tag">What We Do</span>
-                <h2 class="section-title">12 programs. <em>One mission.</em></h2>
-                <p class="programs-intro-sub">From coding to healthcare, every program is designed to create lasting,
-                    economic change for girls and women across Africa.</p>
+                <h2 class="section-title">Our <em>Programs</em></h2>
+                <p class="programs-intro-sub">Pearls Africa develops initiatives that expand access to coding education,
+                    artificial intelligence learning, and mentorship opportunities.</p>
             </div>
             <div class="all-programs-grid">
-                <div class="prog-card">
+                <!-- GirlsCoding -->
+                <div class="prog-card" id="girlscoding">
                     <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="16 18 22 12 16 6" />
                             <polyline points="8 6 2 12 8 18" />
                         </svg></div>
-                    <div class="prog-audience">Ages 7–17 · Digital Skills</div>
-                    <img src="assets/gallery/girls-1.jpeg" alt="Girls Coding" class="program-card-img"
+                    <div class="prog-audience">Ages 7–17 · Digital Skills · Flagship Program</div>
+                    <img src="assets/gallery/girls-1.jpeg" alt="GirlsCoding" class="program-card-img"
                         style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">Girls Coding</h3>
-                    <p class="prog-desc">Teaching underserved girls HTML, CSS, JavaScript, and Python through Summer
-                        Code Camps and AfterSchool programs. Building the next generation of female software developers.
+                    <h3 class="prog-title">GirlsCoding</h3>
+                    <p class="prog-desc">Coding and digital skills for girls — teaching HTML, CSS, JavaScript, and
+                        Python through Summer Code Camps and AfterSchool programs. Building the next generation of
+                        female software developers.
                     </p>
                     <div class="prog-footer"><span class="prog-duration">Rolling Enrollment</span><span
                             class="program-chip" style="margin-bottom:0;">Tech Skills</span></div>
                 </div>
-                <div class="prog-card">
+                <!-- Girls in AI -->
+                <div class="prog-card" id="girlsinai">
                     <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                            <polyline points="9 12 11 14 15 10" />
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
                         </svg></div>
-                    <div class="prog-audience">Girls &amp; Women · Mentorship</div>
-                    <img src="assets/gallery/girls-2.jpg" alt="Safe Space" class="program-card-img"
+                    <div class="prog-audience">Girls · AI Literacy</div>
+                    <img src="assets/gallery/girls-2.jpg" alt="Girls in AI" class="program-card-img"
                         style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">Safe Space</h3>
-                    <p class="prog-desc">A 3-month virtual learning community providing support on personal health,
-                        child abuse awareness, career choices, sexual harassment, and cultural practices.</p>
-                    <div class="prog-footer"><span class="prog-duration">3-Month Virtual</span><span
-                            class="program-chip" style="margin-bottom:0;">Mentorship</span></div>
-                </div>
-                <div class="prog-card">
-                    <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="7" width="20" height="14" rx="2" />
-                            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                            <line x1="2" y1="12" x2="22" y2="12" />
-                        </svg></div>
-                    <div class="prog-audience">Undergraduates &amp; Graduates</div>
-                    <img src="assets/gallery/10.jpg" alt="Ladies at Work" class="program-card-img"
-                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">Ladies at Work</h3>
-                    <p class="prog-desc">Monthly workshops equipping undergraduates and graduates with digital skills
-                        and job preparation tools needed to enter and thrive in today's competitive workforce.</p>
-                    <div class="prog-footer"><span class="prog-duration">Monthly Workshops</span><span
-                            class="program-chip" style="margin-bottom:0;">Employment</span></div>
-                </div>
-                <div class="prog-card">
-                    <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="6" cy="6" r="3" />
-                            <circle cx="6" cy="18" r="3" />
-                            <line x1="20" y1="4" x2="8.12" y2="15.88" />
-                            <line x1="14.47" y1="14.48" x2="20" y2="20" />
-                            <line x1="8.12" y1="8.12" x2="12" y2="12" />
-                        </svg></div>
-                    <div class="prog-audience">Vocational Training Seekers</div>
-                    <img src="assets/gallery/girls-3.jpeg" alt="Empowered Hands" class="program-card-img"
-                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">Empowered Hands</h3>
-                    <p class="prog-desc">Seasonal vocational training (July–August) covering bead-making, fashion
-                        designing, weaving, Ankara crafts, hair styling, baking, and wig making for economic
-                        independence.</p>
-                    <div class="prog-footer"><span class="prog-duration">July – August</span><span class="program-chip"
-                            style="margin-bottom:0;">Vocational</span></div>
-                </div>
-                <div class="prog-card">
-                    <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M9 3h6" />
-                            <path d="M10 3v5l-4 8a1 1 0 0 0 .9 1.5h10.2A1 1 0 0 0 18 16l-4-8V3" />
-                            <line x1="6.5" y1="13" x2="17.5" y2="13" />
-                        </svg></div>
-                    <div class="prog-audience">CS Students · Female Founders</div>
-                    <img src="assets/gallery/23.jpeg" alt="Lady Labs" class="program-card-img"
-                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">Lady Labs</h3>
-                    <p class="prog-desc">An innovation hub providing girls from the poorest communities, CS students,
-                        and female tech founders with functional IT skills, practical experience, and co-working space.
+                    <h3 class="prog-title">Girls in AI</h3>
+                    <p class="prog-desc">Introduction to artificial intelligence learning — exploring AI concepts, how
+                        emerging technologies are shaping industries, and how girls can participate in the AI economy.
                     </p>
-                    <div class="prog-footer"><span class="prog-duration">Rolling</span><span class="program-chip"
-                            style="margin-bottom:0;">Innovation</span></div>
+                    <div class="prog-footer"><span class="prog-duration">Rolling Enrollment</span><span
+                            class="program-chip" style="margin-bottom:0;">AI Education</span></div>
                 </div>
-                <div class="prog-card">
+                <!-- Women in AI Initiative -->
+                <div class="prog-card" id="womeninai">
                     <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -150,111 +107,32 @@
                             <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
                             <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                         </svg></div>
-                    <div class="prog-audience">Underserved Communities</div>
-                    <img src="assets/gallery/11.jpg" alt="Community Outreach" class="program-card-img"
+                    <div class="prog-audience">Women · Career &amp; Leadership</div>
+                    <img src="assets/gallery/23.jpeg" alt="Women in AI Initiative" class="program-card-img"
                         style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">Community Outreach</h3>
-                    <p class="prog-desc">Feeding programs, orphanage visits, relief material donations, and community
-                        cook-outs reaching the most vulnerable members of underserved communities.</p>
+                    <h3 class="prog-title">Women in AI Initiative</h3>
+                    <p class="prog-desc">Supporting women pursuing careers and leadership in AI — through mentorship,
+                        community building, and opportunities to explore and advance in artificial intelligence fields.
+                    </p>
                     <div class="prog-footer"><span class="prog-duration">Rolling</span><span class="program-chip"
-                            style="margin-bottom:0;">Outreach</span></div>
+                            style="margin-bottom:0;">Career &amp; Leadership</span></div>
                 </div>
-                <div class="prog-card">
-                    <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10" />
-                            <line x1="12" y1="8" x2="12" y2="16" />
-                            <line x1="8" y1="12" x2="16" y2="12" />
-                        </svg></div>
-                    <div class="prog-audience">Medically Underserved</div>
-                    <img src="assets/gallery/13.jpg" alt="Medical Outreach" class="program-card-img"
-                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">Medical Outreach</h3>
-                    <p class="prog-desc">Free healthcare and education on disease prevention for uninsured and medically
-                        underserved individuals in communities where Pearls Africa operates.</p>
-                    <div class="prog-footer"><span class="prog-duration">Rolling</span><span class="program-chip"
-                            style="margin-bottom:0;">Healthcare</span></div>
-                </div>
-                <div class="prog-card">
+                <!-- Pearls AI Teachers Fellowship -->
+                <div class="prog-card" id="aiteachers">
                     <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
                             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                         </svg></div>
-                    <div class="prog-audience">Underprivileged Girls</div>
-                    <img src="assets/gallery/14.jpeg" alt="Educate Her" class="program-card-img"
+                    <div class="prog-audience">Educators · AI in Classrooms</div>
+                    <img src="assets/gallery/14.jpeg" alt="Pearls AI Teachers Fellowship" class="program-card-img"
                         style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">Educate Her</h3>
-                    <p class="prog-desc">Scholarship program supporting promising girls from underprivileged
-                        communities, removing financial barriers to education and enabling academic achievement.</p>
-                    <div class="prog-footer"><span class="prog-duration">Rolling</span><span class="program-chip"
-                            style="margin-bottom:0;">Scholarships</span></div>
-                </div>
-                <div class="prog-card">
-                    <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
-                            <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-                            <line x1="12" y1="19" x2="12" y2="23" />
-                            <line x1="8" y1="23" x2="16" y2="23" />
-                        </svg></div>
-                    <div class="prog-audience">Secondary School Girls</div>
-                    <img src="assets/gallery/17.jpg" alt="School Outreach" class="program-card-img"
-                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">School Outreach</h3>
-                    <p class="prog-desc">Career talks and mentorship sessions at secondary schools across Lagos,
-                        inspiring girls to pursue STEM careers and connecting them with successful female role models.
+                    <h3 class="prog-title">Pearls AI Teachers Fellowship</h3>
+                    <p class="prog-desc">Training educators to introduce AI awareness in classrooms — equipping teachers
+                        with tools and resources to bring digital innovation and AI literacy to the girls they teach.
                     </p>
                     <div class="prog-footer"><span class="prog-duration">Rolling</span><span class="program-chip"
-                            style="margin-bottom:0;">Mentorship</span></div>
-                </div>
-                <div class="prog-card">
-                    <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                        </svg></div>
-                    <div class="prog-audience">Pre-Career Girls</div>
-                    <img src="assets/gallery/19.jpg" alt="Internship Placement" class="program-card-img"
-                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">Internship Placement</h3>
-                    <p class="prog-desc">Assists girls pursuing pre-career work experience with placement in IT
-                        companies, bridging the gap between education and employment in the tech industry.</p>
-                    <div class="prog-footer"><span class="prog-duration">Rolling</span><span class="program-chip"
-                            style="margin-bottom:0;">Career</span></div>
-                </div>
-                <div class="prog-card">
-                    <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10" />
-                            <line x1="2" y1="12" x2="22" y2="12" />
-                            <path
-                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                        </svg></div>
-                    <div class="prog-audience">Community-Wide</div>
-                    <img src="assets/gallery/21.jpeg" alt="Pearls Across Africa" class="program-card-img"
-                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">Pearls Across Africa</h3>
-                    <p class="prog-desc">Building an ecosystem of digitally savvy and financially independent
-                        child-rights advocates across the African continent, amplifying impact beyond Nigeria.</p>
-                    <div class="prog-footer"><span class="prog-duration">Rolling</span><span class="program-chip"
-                            style="margin-bottom:0;">Ecosystem</span></div>
-                </div>
-                <div class="prog-card">
-                    <div class="prog-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="10" cy="8" r="4" />
-                            <path d="M2 20v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1" />
-                            <path d="M20 2l.94 2.06L23 5l-2.06.94L20 8l-.94-2.06L17 5l2.06-.94z" />
-                        </svg></div>
-                    <div class="prog-audience">Girls in STEM</div>
-                    <img src="assets/gallery/22.jpg" alt="GC Mentors" class="program-card-img"
-                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3 class="prog-title">GC Mentors</h3>
-                    <p class="prog-desc">Connecting girls in coding programs with professional female mentors in
-                        technology, providing guidance, support, and inspiration on their journey into tech careers.</p>
-                    <div class="prog-footer"><span class="prog-duration">Rolling</span><span class="program-chip"
-                            style="margin-bottom:0;">Mentorship</span></div>
+                            style="margin-bottom:0;">Education</span></div>
                 </div>
             </div>
         </div>
@@ -319,9 +197,10 @@
                 <div class="footer-col">
                     <h4>Programs</h4>
                     <ul>
-                        <li><a href="programs.html">Girls Coding</a></li>
-                        <li><a href="programs.html">Lady Labs</a></li>
-                        <li><a href="programs.html">Empowered Hands</a></li>
+                        <li><a href="programs.html">GirlsCoding</a></li>
+                        <li><a href="programs.html">Girls in AI</a></li>
+                        <li><a href="programs.html">Women in AI Initiative</a></li>
+                        <li><a href="programs.html">AI Teachers Fellowship</a></li>
                         <li><a href="programs.html">All Programs</a></li>
                     </ul>
                 </div>
@@ -337,7 +216,7 @@
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Pearls Africa Youth Foundation. All rights reserved.</p>
-                <p>NGO &amp; Non-Profit · IT Training · Skills Acquisition · Mentorship</p>
+                <p>Advancing African girls and educators in the digital and AI-driven future.</p>
             </div>
         </div>
     </footer>

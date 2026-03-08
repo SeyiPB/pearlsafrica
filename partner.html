@@ -107,7 +107,7 @@
         }
 
         .demo-heading {
-            font-size: clamp(2rem, 3.5vw, 3rem);
+            font-size: clamp(1rem, 1.75vw, 1.5rem);
             font-weight: 800;
             letter-spacing: -0.03em;
             line-height: 1.1;
@@ -553,12 +553,12 @@
             font-weight: 800;
             letter-spacing: -0.025em;
             margin-bottom: 0.75rem;
-            color: #09090b;
+            color: #ffffff;
         }
 
         .demo-success p {
             font-size: 0.95rem;
-            color: rgba(9, 9, 11, 0.6);
+            color: rgba(255, 255, 255, 0.6);
             line-height: 1.7;
             max-width: 380px;
             margin: 0 auto 2.5rem;
@@ -612,11 +612,14 @@
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="programs.html" class="nav-link">Programs</a></li>
-                    <li><a href="blog.html" class="nav-link">Stories</a></li>
+                    <li><a href="approach.html" class="nav-link">Our Approach</a></li>
+                    <li><a href="impact.html" class="nav-link">Impact</a></li>
+                    <li><a href="partner.html" class="nav-link active">Partners</a></li>
+                    <li><a href="blog.html" class="nav-link">Insights</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <a href="partner.html" class="btn btn-sm nav-cta">WORK WITH US</a>
+            <a href="partner.html" class="btn btn-sm nav-cta">GET INVOLVED</a>
         </div>
     </header>
 
@@ -626,54 +629,87 @@
             <!-- LEFT PANEL -->
             <div class="demo-left">
                 <div class="demo-left-inner">
-                    <span class="demo-eyebrow">Partner with Us</span>
-                    <h1 class="demo-heading">See how we <em>transform</em> communities.</h1>
-                    <p class="demo-subtext">Whether you're a donor, corporate partner, NGO, or government body — let's
-                        explore how Pearls Africa can amplify your impact across Africa.</p>
+                    <span class="demo-eyebrow">Get Involved</span>
+                    <h1 class="demo-heading">Partner with <em>us</em>.</h1>
+                    <p class="demo-subtext" style="max-width:440px;">Pearls Africa relies on the support of our
+                        dedicated community. Join us in equipping the next generation of African girls and women for the
+                        digital economy.</p>
 
-                    <div class="demo-benefits">
-                        <div class="demo-benefit">
-                            <div class="benefit-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                    <circle cx="9" cy="7" r="4" />
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                </svg>
+                    <div class="demo-benefits" style="gap: 1.5rem;">
+                        <!-- Mentoring -->
+                        <div class="demo-benefit"
+                            style="align-items: flex-start; border: 1px solid rgba(255,255,255,0.08); padding: 1.75rem; border-radius: 16px; background: rgba(255,255,255,0.02); display: flex; flex-direction: column; gap: 1rem; transition: background 0.3s;">
+                            <div style="display:flex; align-items:center; gap: 1rem;">
+                                <div class="benefit-icon" style="background:#fff; color:#000;">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    </svg>
+                                </div>
+                                <strong style="font-size: 1.25rem; color: #fff;">Mentoring</strong>
                             </div>
-                            <div class="benefit-text">
-                                <strong>Meet the Pearls Africa team</strong>
-                                <span>A 30-minute live session with our leadership team tailored to your
-                                    interests.</span>
+                            <div class="benefit-text" style="padding: 0;">
+                                <span
+                                    style="font-size:0.95rem; line-height:1.6; color:rgba(255,255,255,0.6); display:block;">Share
+                                    your expertise and guide young girls as they navigate their tech journey. Your
+                                    experience can inspire the next generation of female leaders.</span>
                             </div>
+                            <a href="#partner-form" class="btn btn-sm"
+                                style="background:#fff; color:#000; text-transform:uppercase; font-size:0.75rem; letter-spacing:0.05em; margin-top:0.5rem; text-decoration:none; padding:0.6rem 1.2rem; border-radius:6px; font-weight:700;">Become
+                                a Mentor</a>
                         </div>
-                        <div class="demo-benefit">
-                            <div class="benefit-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <line x1="2" y1="12" x2="22" y2="12" />
-                                    <path
-                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                                </svg>
+
+                        <!-- Volunteering -->
+                        <div class="demo-benefit"
+                            style="align-items: flex-start; border: 1px solid rgba(255,255,255,0.08); padding: 1.75rem; border-radius: 16px; background: rgba(255,255,255,0.02); display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="display:flex; align-items:center; gap: 1rem;">
+                                <div class="benefit-icon" style="background:#fff; color:#000;">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;">
+                                        <path
+                                            d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z" />
+                                    </svg>
+                                </div>
+                                <strong style="font-size: 1.25rem; color: #fff;">Volunteering</strong>
                             </div>
-                            <div class="benefit-text">
-                                <strong>Explore partnership opportunities</strong>
-                                <span>Discover co-branding, CSR, funding, and program partnership models.</span>
+                            <div class="benefit-text" style="padding: 0;">
+                                <span
+                                    style="font-size:0.95rem; line-height:1.6; color:rgba(255,255,255,0.6); display:block;">Join
+                                    our on-the-ground efforts. From organizing events to supporting daily operations,
+                                    your time helps us maximize our impact.</span>
                             </div>
+                            <a href="#partner-form" class="btn btn-sm"
+                                style="background:#fff; color:#000; text-transform:uppercase; font-size:0.75rem; letter-spacing:0.05em; margin-top:0.5rem; text-decoration:none; padding:0.6rem 1.2rem; border-radius:6px; font-weight:700;">Volunteer
+                                with Us</a>
                         </div>
-                        <div class="demo-benefit">
-                            <div class="benefit-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                                </svg>
+
+                        <!-- Sponsorship -->
+                        <div class="demo-benefit"
+                            style="align-items: flex-start; border: 1px solid rgba(255,255,255,0.08); padding: 1.75rem; border-radius: 16px; background: rgba(255,255,255,0.02); display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="display:flex; align-items:center; gap: 1rem;">
+                                <div class="benefit-icon" style="background:#fff; color:#000;">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 2v20"></path>
+                                        <path d="M2 12h20"></path>
+                                        <path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20"></path>
+                                    </svg>
+                                </div>
+                                <strong style="font-size: 1.25rem; color: #fff;">Sponsorship</strong>
                             </div>
-                            <div class="benefit-text">
-                                <strong>Get impact metrics &amp; reports</strong>
-                                <span>See real data on girls reached, programs delivered, and outcomes achieved.</span>
+                            <div class="benefit-text" style="padding: 0;">
+                                <span
+                                    style="font-size:0.95rem; line-height:1.6; color:rgba(255,255,255,0.6); display:block;">Provide
+                                    the essential resources, funding, and tools that enable our programs to reach more
+                                    girls across underserved communities.</span>
                             </div>
+                            <a href="#partner-form" class="btn btn-sm"
+                                style="background:#fff; color:#000; text-transform:uppercase; font-size:0.75rem; letter-spacing:0.05em; margin-top:0.5rem; text-decoration:none; padding:0.6rem 1.2rem; border-radius:6px; font-weight:700;">Become
+                                a Sponsor</a>
                         </div>
                     </div>
 
@@ -690,7 +726,7 @@
             </div>
 
             <!-- RIGHT PANEL -->
-            <div class="demo-right">
+            <div class="demo-right" id="partner-form">
 
                 <!-- Step indicator -->
                 <div class="demo-step-indicator">
@@ -707,116 +743,7 @@
                     </div>
                     <p class="demo-section-label">I represent a…</p>
                     <div class="qualify-grid">
-                        <div class="qualify-card" onclick="selectCard(this, 'role')">
-                            <div class="qualify-card-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                </svg>
-                            </div>
-                            <div class="qualify-card-text">
-                                <strong>Corporation / Brand</strong>
-                                <span>CSR, sponsorship, co-branding</span>
-                            </div>
-                        </div>
-                        <div class="qualify-card" onclick="selectCard(this, 'role')">
-                            <div class="qualify-card-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <path d="M12 2v20"></path>
-                                    <path d="M2 12h20"></path>
-                                    <path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20"></path>
-                                </svg>
-                            </div>
-                            <div class="qualify-card-text">
-                                <strong>NGO / Foundation</strong>
-                                <span>Partnership, collaboration</span>
-                            </div>
-                        </div>
-                        <div class="qualify-card" onclick="selectCard(this, 'role')">
-                            <div class="qualify-card-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                </svg>
-                            </div>
-                            <div class="qualify-card-text">
-                                <strong>Government Body</strong>
-                                <span>Policy, funding, programme</span>
-                            </div>
-                        </div>
-                        <div class="qualify-card" onclick="selectCard(this, 'role')">
-                            <div class="qualify-card-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="8.5" cy="7" r="4"></circle>
-                                    <polyline points="17 11 19 13 23 9"></polyline>
-                                </svg>
-                            </div>
-                            <div class="qualify-card-text">
-                                <strong>Individual Donor</strong>
-                                <span>Personal giving, fundraising</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="error-step-1"
-                        style="color: #ff4d4d; font-size: 0.8rem; margin-top: -0.5rem; margin-bottom: 1.5rem; display: none;">
-                        Please select your role to continue.</div>
-                    <div class="demo-nav">
-                        <span></span>
-                        <button class="btn-next disabled" id="next-1" onclick="goTo(2)">
-                            Continue
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- SECTION 2: Your interest -->
-                <div class="demo-section" id="section-2">
-                    <div class="demo-form-header">
-                        <h2>What interests you?</h2>
-                        <p>Select all that apply — we'll tailor the demo around your goals.</p>
-                    </div>
-                    <p class="demo-section-label">I'm interested in…</p>
-                    <div class="qualify-grid">
-                        <div class="qualify-card" onclick="toggleCard(this)">
-                            <div class="qualify-card-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="16 18 22 12 16 6" />
-                                    <polyline points="8 6 2 12 8 18" />
-                                </svg>
-                            </div>
-                            <div class="qualify-card-text">
-                                <strong>Tech &amp; Coding Programs</strong>
-                                <span>Girls Coding, Lady Labs</span>
-                            </div>
-                        </div>
-                        <div class="qualify-card" onclick="toggleCard(this)">
-                            <div class="qualify-card-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="6" cy="6" r="3" />
-                                    <circle cx="6" cy="18" r="3" />
-                                    <line x1="20" y1="4" x2="8.12" y2="15.88" />
-                                    <line x1="14.47" y1="14.48" x2="20" y2="20" />
-                                    <line x1="8.12" y1="8.12" x2="12" y2="12" />
-                                </svg>
-                            </div>
-                            <div class="qualify-card-text">
-                                <strong>Vocational Training</strong>
-                                <span>Empowered Hands</span>
-                            </div>
-                        </div>
-                        <div class="qualify-card" onclick="toggleCard(this)">
+                        <div class="qualify-card" onclick="selectCard(this)">
                             <div class="qualify-card-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
                                     stroke-linecap="round" stroke-linejoin="round">
@@ -828,21 +755,47 @@
                             </div>
                             <div class="qualify-card-text">
                                 <strong>Mentorship</strong>
-                                <span>Safe Space, GC Mentors</span>
+                                <span>Guide and inspire girls</span>
                             </div>
                         </div>
-                        <div class="qualify-card" onclick="toggleCard(this)">
+                        <div class="qualify-card" onclick="selectCard(this)">
                             <div class="qualify-card-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
                                     stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <line x1="12" y1="8" x2="12" y2="16" />
-                                    <line x1="8" y1="12" x2="16" y2="12" />
+                                    <path
+                                        d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z" />
                                 </svg>
                             </div>
                             <div class="qualify-card-text">
-                                <strong>Community &amp; Health</strong>
-                                <span>Outreach, Medical programs</span>
+                                <strong>Volunteering</strong>
+                                <span>Support our programs globally</span>
+                            </div>
+                        </div>
+                        <div class="qualify-card" onclick="selectCard(this)">
+                            <div class="qualify-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 2v20"></path>
+                                    <path d="M2 12h20"></path>
+                                    <path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20"></path>
+                                </svg>
+                            </div>
+                            <div class="qualify-card-text">
+                                <strong>Sponsorship &amp; Funding</strong>
+                                <span>Provide resources and support</span>
+                            </div>
+                        </div>
+                        <div class="qualify-card" onclick="selectCard(this)">
+                            <div class="qualify-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                                </svg>
+                            </div>
+                            <div class="qualify-card-text">
+                                <strong>Other Partnerships</strong>
+                                <span>Events, Media, CSR etc.</span>
                             </div>
                         </div>
                     </div>
@@ -970,19 +923,11 @@
                 if (currentStep === 1) {
                     const selected = document.querySelector('#section-1 .qualify-card.selected');
                     if (!selected) {
-                        document.getElementById('error-step-1').style.display = 'block';
-                        return;
-                    }
-                    document.getElementById('error-step-1').style.display = 'none';
-                    formData.role = selected.querySelector('strong').innerText;
-                } else if (currentStep === 2) {
-                    const selected = document.querySelectorAll('#section-2 .qualify-card.selected');
-                    if (selected.length === 0) {
                         document.getElementById('error-step-2').style.display = 'block';
                         return;
                     }
                     document.getElementById('error-step-2').style.display = 'none';
-                    formData.interests = Array.from(selected).map(el => el.querySelector('strong').innerText);
+                    formData.role = selected.querySelector('strong').innerText;
                 }
             }
 
@@ -1006,8 +951,8 @@
         function selectCard(el, group) {
             document.querySelectorAll('#section-1 .qualify-card').forEach(c => c.classList.remove('selected'));
             el.classList.add('selected');
-            document.getElementById('error-step-1').style.display = 'none';
-            document.getElementById('next-1').classList.remove('disabled');
+            document.getElementById('error-step-2').style.display = 'none';
+            document.getElementById('next-2').classList.remove('disabled');
         }
 
         function toggleCard(el) {
