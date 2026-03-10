@@ -981,14 +981,12 @@ a {
 .partners-row img {
     height: 34px;
     object-fit: contain;
-    opacity: 0.45;
-    filter: grayscale(100%);
-    transition: opacity 0.2s, filter 0.2s;
+    opacity: 1;
+    transition: transform 0.2s;
 }
 
 .partners-row img:hover {
-    opacity: 0.9;
-    filter: grayscale(0%);
+    transform: scale(1.05);
 }
 
 /* 12. CTA BANNER */
@@ -1887,14 +1885,12 @@ textarea.form-control {
 .partners-track img {
     height: 48px;
     width: auto;
-    filter: grayscale(1) brightness(0.8) contrast(1.2);
-    opacity: 0.5;
+    filter: brightness(1.2);
+    opacity: 1;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .partners-track img:hover {
-    filter: grayscale(0) brightness(1) contrast(1);
-    opacity: 1;
     transform: translateY(-2px) scale(1.05);
 }
 

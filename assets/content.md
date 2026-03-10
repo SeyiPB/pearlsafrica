@@ -45,7 +45,7 @@ Featured Blog Stories (Snippets)
 
 Organizational Identity
 
-* **Entity:** Pearls Africa Foundation (Social enterprise)  
+* **Entity:** Pearls Africa Foundation (Non-profit)  
 * **Focus:** Advancing young girls and women, especially vulnerable girls in underserved communities.
 
 Detailed Mission
