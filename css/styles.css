@@ -982,6 +982,7 @@ a {
     height: 34px;
     object-fit: contain;
     opacity: 1;
+    mix-blend-mode: multiply;
     transition: transform 0.2s;
 }
 
@@ -1887,6 +1888,7 @@ textarea.form-control {
     width: auto;
     filter: brightness(1.2);
     opacity: 1;
+    mix-blend-mode: multiply;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
